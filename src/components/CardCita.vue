@@ -1,6 +1,6 @@
 <template>
     <div id="cardPaciente">
-        <div class="card"
+        <div class="card my-3"
             :style="{ backgroundColor: cita.gravedad == 'Baja' ? 'greenyellow' : cita.gravedad == 'Media' ? 'yellow' : cita.gravedad == 'Alta' ? 'red' : '' }">
             <div class="card-body">
                 <h6 class="card-title fw-bolder">Paciente</h6>
@@ -11,7 +11,7 @@
                 <p class="card-text"> {{ cita.hora }}</p>
                 <h6 class="card-title fw-bolder">Motivo</h6>
                 <p class="card-text"> {{ cita.motivo }}</p>
-                <button class="btn btn-light"
+                <button class="btn btn-secondary"
                     @click="$emit('eliminarCita')">Eliminar</button>
             </div>
         </div>
